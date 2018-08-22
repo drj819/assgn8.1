@@ -1,0 +1,35 @@
+Assignment 
+8.1 (1)
+
+install.packages("RcmdrPlugin.IPSUR")
+library(RcmdrPlugin.IPSUR)
+head(RcmdrTestDrive)
+
+mean(RcmdrTestDrive$salary)
+
+install.packages("plyr")
+library(plyr)
+
+library(reshape2)
+library(plyr)
+library(ggplot2)
+install.packages("RcmdrPlugin.IPSUR")
+library(RcmdrPlugin.IPSUR)
+
+(a)
+
+tapply(RcmdrTestDrive$salary, RcmdrTestDrive$gender, mean)
+
+tapply(RcmdrTestDrive$salary, RcmdrTestDrive$smoking, mean)
+
+(b)
+Female-698.011
+Male-743.391-Highest Salary
+
+(c)
+mean(RcmdrTestDrive$salary)
+724.51
+
+(d)
+tapply(RcmdrTestDrive$salary, RcmdrTestDrive$gender, sd)
+Female-130.70 Male-158.54
